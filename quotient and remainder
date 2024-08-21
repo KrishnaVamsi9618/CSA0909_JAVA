@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class QuotientAndRemainder {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter the dividend: ");
+        int dividend = scanner.nextInt();
+    System.out.print("Enter the divisor: ");
+        int divisor = scanner.nextInt();
+        if (divisor == 0) {
+            System.out.println("Error: Division by zero is not allowed.");
+        } else {
+            int quotient = dividend / divisor;
+            int remainder = dividend % divisor;
+  System.out.println("The quotient of " + dividend + " divided by " + divisor + " is " + quotient);
+            System.out.println("The remainder of " + dividend + " divided by " + divisor + " is " + remainder);
+        }
+        scanner.close();
+    }
+}
